@@ -22,7 +22,7 @@ function openCity(evt, cityName) {
 function openMain() {     //precondition: no tabs opened
     var mainTab, mainAction;
     
-    mainTab = document.getElementsByClassName("main");
+    mainTab = document.getElementsByClassName("main")[0];
     console.log(mainTab);
     mainAction = mainTab.getAttribute("onclick");
     mainTab.className += " active";
