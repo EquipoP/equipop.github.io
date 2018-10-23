@@ -94,7 +94,14 @@ body {
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-image: linear-gradient(#fc9923, #d68019);
+	background: -moz-linear-gradient(#fc9923, #d68019); /* FF 3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc9923), color-stop(100%, #d68019)); /* Safari 4+, Chrome 2+ */
+	background: -webkit-linear-gradient(#fc9923, #d68019); /* Safari 5.1+, Chrome 10+ */
+	background: -o-linear-gradient(#fc9923, #d68019); /* Opera 11.10 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff'); /* IE6 & IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff')"; /* IE8+ */
+	background: linear-gradient(#fc9923, #d68019);
+	background-image: linear-gradient(#fc9923, #d68019);
 }
 
 /* Style the tab content */
