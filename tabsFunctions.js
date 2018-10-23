@@ -25,6 +25,6 @@ function openMain() {     //precondition: no tabs opened
     mainTab = document.getElementsByClassName("main");
     mainAction = mainTab.getAttribute(onclick);
     mainTab.className += " active";
+    console.log(mainAction);
     call(mainAction);
-    
 }
