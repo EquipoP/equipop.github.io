@@ -18,3 +18,13 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+function openMain() {     //precondition: no tabs opened
+    var mainTab, mainAction;
+    
+    mainTab = document.getElementsByClassName("main");
+    mainAction = mainTab.getAttribute(onclick);
+    mainTab.className += " active";
+    call(mainAction);
+    
+}
