@@ -13,25 +13,46 @@
 </div>
 
 <div class=inputero>
-    <input type="text" name="name" id="myUniqueId" value="INGRESE EL NÚMERO DE 4 DÍGITOS" size=50% />
-    <button onclick="verifyAns()" >Listo!</button>
+    Ingrese un número por cuadro:
+    <div>
+        <span class=lilBox>
+            <input type="text" name="name" id="input1" value="" placeholder="a"/>
+        </span>
+        
+        <span class=lilBox>
+            <input type="text" name="name" id="input2" value="" placeholder="b"/>
+        </span>
+        
+        <span class=lilBox>
+            <input type="text" name="name" id="input3" value="" placeholder="c"/>
+        </span>
+        
+        <span class=lilBox>
+            <input type="text" name="name" id="input4" value="" placeholder="d"/>
+        </span>
+    </div>
+    <div>
+        <button onclick="verifyAns()" >Listo!</button>
+    </div>    
 </div>
 
-<div id=salida>
-    LA RESPUESTA ES CORRECTA, LA LLAVE ESTÁ ABAJO DE LA MESA
+<div id=welcome>
+    Bienvenido, escriba una cifra por cuadro.
 </div>
 
-<script>
-function verifyAns() {
-    var inputNum = document.getElementById("myUniqueId").value;
-    console.log(inputNum);
-    if (inputNum == '1998'){
-        console.log(document.getElementById("salida").style.display);
-        document.getElementById("salida").style.display = "block";
-    }
-}
+<div id=fail1>
+    RESPUESTA INCORRECTA.
+</div>
 
+<div id=fail2>
+    RESPUESTA INCORRECTA.
+</div>
 
+<div id=success>
+</div>
+
+<script src="lamaquina.js">
 </script>
+
 </body>
 </html>

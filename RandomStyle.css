@@ -34,6 +34,7 @@ body {
     padding: 0px;
 	margin: 0px;
 	border-width:0px;
+    text-align: center;
 }
 
 .heading {
@@ -48,17 +49,33 @@ body {
 
 .inputero {
   margin: auto;
-  width: 50%;
-  border: 5px solid green;
+  width: 90%;
+  min-height: 100px;
+  border: 5px solid;
   padding: 10px;
   margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 5px;
   border-color: #c30000;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.inputero input {
+  display: inline-block;
+  margin: auto;
+  margin-top:10px;
+  width: 20%;
+  background-color: #303030;
+  text-align: center;
+  color: white;
+  font-size: 30px;
 }
 
 .inputero button {
   margin: auto;
-  width: 30%;
+  width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #c30000;
@@ -69,21 +86,47 @@ body {
   display: inline-block;
   font-size: 16px;
   border: 2px solid white;
-  float: right;
+  float: center;
+  margin-top:10px;
 }
 
-.inputero input {
-  margin: auto;
-  width: 50%;
+#fail1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+    display:none;
 }
 
-#salida {
+#fail2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+    display:none;
+}
+
+#success {
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+    color: #ffffff;
     display: none;
-    padding: 6px 12px;
-	margin: 1px;
-    border: 1px solid #dd9033;
-    border-top-width: 0px;	
-	margin-top: 0px;
+}
+
+#welcome {
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#fail1 {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+#fail2 {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
 .title {
