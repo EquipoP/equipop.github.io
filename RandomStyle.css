@@ -57,6 +57,7 @@ body {
 }
 
 .inputero button {
+  margin: auto;
   width: 30%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -68,6 +69,12 @@ body {
   display: inline-block;
   font-size: 16px;
   border: 2px solid white;
+  float: right;
+}
+
+.inputero input {
+  margin: auto;
+  width: 50%;
 }
 
 #salida {
