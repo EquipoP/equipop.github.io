@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="RandomStyle.css">
@@ -8,46 +9,29 @@
 
 <div class="heading">
   <img src="resources/HeadingBack.png" alt="Green Toys" style="width:100%;">
-  <div class="title">Equipo P</div>
+  <div class="title">Hospital León Weiss</div>
 </div>
 
-<!-- Tab links -->
-<div class="tab">
-  <button class="tablinks main" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-  
-<!-- Tab content -->
-<div id="London" class="tabcontent">
-
-	<h3> Quiénes somos? </h3>
-	
-	<p> Somos un grupo de jóvenes que se dedican al entretenimiento de niños y adultos; 
-	incursionando para ello en las más variadas áreas, como la recreación, la construcción, 
-	el diseño o la fotografía. </p>
-	<p>Nos encontramos trabajando constantemente con especialistas en estos ámbitos 
-	para intentar mejorar nuestros servicios e intentar que nuestros proyectos sean a la vez innovadores y útiles, 
-	mientras nos mantenemos enfocados en lo que hacemos sea de la mejor calidad posible. </p>
-	<p> Estamos además constantemente pensando en nuestro crecimiento, iniciando aproximadamente 
-	un proyecto nuevo cada seis meses. </p>
-	
+<div class=inputero>
+    <input type="text" name="name" id="myUniqueId" value="INGRESE EL NÚMERO DE 4 DÍGITOS" size=50% />
+    <button onclick="verifyAns()" >Listo!</button>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+<div id=salida>
+    LA RESPUESTA ES CORRECTA, LA LLAVE ESTÁ ABAJO DE LA MESA
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
+<script>
+function verifyAns() {
+    var inputNum = document.getElementById("myUniqueId").value;
+    console.log(inputNum);
+    if (inputNum == '1998'){
+        console.log(document.getElementById("salida").style.display);
+        document.getElementById("salida").style.display = "block";
+    }
+}
 
-<div class="footer">
 
-	<p> Sitio: EquipoP.cf   ||   Tel: 099090909   ||  San José de Mayo, San José, Uruguay. <p>
-
-<script src="tabsFunctions.js"></script>
+</script>
 </body>
 </html>
